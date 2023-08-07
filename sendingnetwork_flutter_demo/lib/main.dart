@@ -14,9 +14,15 @@ import 'package:intl/intl.dart';
 import 'package:eth_sig_util/eth_sig_util.dart';
 import 'package:path_provider/path_provider.dart';
 
-String privKey = ""; //
-String addressHexAll = "";
-String homeUrl = "";
+// String privKey = ""; //
+// String addressHexAll = "";
+// String homeUrl = "";
+
+String privKey =
+    "f630d27bafc00df4bfb452586f9e7b4dfda1b3f16e242819311473164a2e28d9"; //
+String addressHexAll = "0xa6dC81DE79ba5BDB908da792d5A96cBB15Cc7424";
+String homeUrl = "https://beginner.sending.network";
+
 late Room currentRoom;
 
 void main() async {
@@ -110,13 +116,31 @@ class _LoginPageState extends State<LoginPage> {
     print("postPreLoginDID response.updated= ${response.updated}");
     print("postPreLoginDID random_server= ${response.random_server}");
     showToast("postPreLoginDIDresultdid=:${response.did}");
-    postLoginDId(response);
+    appServiceSign(response);
     setState(() {
       _loading = false;
     });
   }
 
-  void postLoginDId(SDNLoginResponse responsesdn) async {
+  Future<void> appServiceSign(SDNLoginResponse responsesdn) async {
+    // print('appServiceSign message => $message');
+    setState(() {
+      _loading = true;
+    });
+    final client = Provider.of<Client>(context, listen: false);
+    ApperviceSignResponse response =
+        await client.appServiceSign(message: responsesdn.message);
+    print('appServiceSign message => ${response.signature}');
+
+    postLoginDId(responsesdn, response);
+
+    setState(() {
+      _loading = false;
+    });
+  }
+
+  void postLoginDId(
+      SDNLoginResponse responsesdn, ApperviceSignResponse meessageSign) async {
     setState(() {
       _loading = true;
     });
@@ -131,7 +155,8 @@ class _LoginPageState extends State<LoginPage> {
         "did": responsesdn.did,
         "address": addressHexAll,
         "token": signMessage,
-        "message": str
+        "message": str,
+        "app_token": meessageSign.signature
       };
       print("jsonString $jsonData");
       var response = await client.postLoginDId(

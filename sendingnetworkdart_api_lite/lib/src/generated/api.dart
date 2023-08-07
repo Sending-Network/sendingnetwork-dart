@@ -15,6 +15,7 @@ import 'fixed_model.dart';
 import 'internal.dart';
 import 'model.dart';
 import 'package:flutter/foundation.dart';
+import 'package:http/http.dart' as http;
 
 class Api {
   Client httpClient;
@@ -1909,6 +1910,27 @@ class Api {
     if (response.statusCode != 200) unexpectedResponse(response, responseBody);
     final responseString = utf8.decode(responseBody);
     return responseString;
+  }
+
+  Future<ApperviceSignResponse> appServiceSign(
+      {required String message}) async {
+    var url = Uri.parse('https://rewards.sending.network/_api/appservice/sign');
+    var body = jsonEncode({
+      "message": "hello",
+    });
+
+    var headers = {'Content-Type': 'application/json'};
+
+    print("body=$body");
+
+    var responseB = await http.post(url, headers: headers, body: body);
+
+    final responseBody = await responseB.bodyBytes;
+    var response = utf8.decode(responseBody);
+
+    print("response=$response");
+    Map<String, dynamic> data = jsonDecode(response);
+    return ApperviceSignResponse.fromJson(data as Map<String, dynamic>);
   }
 
   Future<SDNDIDLoginResponse> postLoginDId(

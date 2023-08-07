@@ -1414,6 +1414,22 @@ class SDNDIDListResponse {
 }
 
 @_NameSource('generated')
+class ApperviceSignResponse {
+  String signature;
+
+  ApperviceSignResponse({required this.signature});
+
+  ApperviceSignResponse.fromJson(Map<String, dynamic> json)
+      : signature = json['signature'] as String;
+
+  Map<String, dynamic> toJson() {
+    return {
+      'signature': signature,
+    };
+  }
+}
+
+@_NameSource('generated')
 class SDNLoginResponse {
   SDNLoginResponse({
     required this.did,
