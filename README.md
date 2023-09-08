@@ -185,7 +185,7 @@ Entry parameters:
 LoginRequest
 
 | Name | Type | Description | Required |
-| :---------- | :-------------- | :-------------------- ------------------ | :------- |
+| :---------- | :-------------- | :------- | :------- |
 | type | string | login type (currently m.login.did.identity) | true |
 | updated | string | time, updated | true | returned by pre_login
 | identifier | IdentifierModel | login information | true |
@@ -194,7 +194,7 @@ LoginRequest
 IdentifierModel type:
 
 | Name | Type | Description |
-| :---- | :----- | :----------------------------------- ------------------------ |
+| :---- | :----- | :------------ |
 | did | string | user did |
 | token | string | The method of signing the message signature returned by pre_login is to sign directly using the private key: you can directly call EthSigUtil.signPersonalMessage in the did class to sign |
 | app_token | string | The message signature method returned by pre_login is to use the interface "appServiceSign" signature|
@@ -232,7 +232,7 @@ await clear();
 Entry parameters:
 
 | Name | Type | Description | Required |
-| :---- | :----- | :----------------------------------- --- | :------- |
+| :---- | :----- | :--------- | :------- |
 | token | string | login type (current value m.login.did.identity) | true |
 | | | |
 
