@@ -22,6 +22,9 @@ coverage_badge.svg
 *.ipr
 *.iws
 .idea/
+.dart_tool/
+.packages
+pubspec.lock # library relate lock files
 
 # Visual Studio Code related
 .vscode/
@@ -31,11 +34,12 @@ coverage_badge.svg
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
-.packages
 .pub-cache/
 .pub/
 build/
 pubspec.lock
+*.framework
+
 
 # Android related
 **/android/**/gradle-wrapper.jar

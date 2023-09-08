@@ -552,8 +552,9 @@ class Client extends SDNApi {
 
   @override
   Future<ApperviceSignResponse> appServiceSign(
-      {required String message}) async {
-    final response = await super.appServiceSign(message: message);
+      {required String message, required String address}) async {
+    final response =
+        await super.appServiceSign(message: message, address: address);
 
     return response;
   }

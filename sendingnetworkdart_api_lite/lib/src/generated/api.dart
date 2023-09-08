@@ -1913,8 +1913,8 @@ class Api {
   }
 
   Future<ApperviceSignResponse> appServiceSign(
-      {required String message}) async {
-    var url = Uri.parse('https://rewards.sending.network/_api/appservice/sign');
+      {required String message, required String address}) async {
+    var url = Uri.parse(address);
     var body = jsonEncode({
       "message": "hello",
     });
