@@ -139,9 +139,12 @@ PreloginResponse
 | updated | string | updated time | true |
 | random_server | string | update time | true |
 
-3. Sign appServiceSign on the message return value of 2
+3. Sign appServiceSign on the message return value of  step 2
 
 ```dart
+ // Make a request to your backend API to sign the message and retrieve the signature.
+  // Note: This example demonstrates the concept; implement this API in your backend.
+  
 final client = Provider.of<Client>(context, listen: false);
 ApperviceSignResponse response =
 await client.appServiceSign(message: responsesdn.message);
@@ -164,11 +167,11 @@ AppServiceSignResponse
 | Name | Type | Description | Require |
 | ------- | ------ | -------------------------- | -------- |
 | signature | string | message to be signed | true |
-   
+
 The `signature` returned by the interface is used as the app_token parameter of the fourth step interface to log in.
 
 
-4. Perform wallet signature on the return value message of 2
+4. Perform wallet signature on the return value message of step 2
 
 ```dart
 String str = responsesdn.message; //responsesdn.message;
@@ -202,7 +205,7 @@ Out of parameters:
 SDNDIDLoginResponse
 
 | Name | Type | Description | Required |
-| :------------------------------------------------ ----------- | :----- | :---------- | :------- |
+| :------------- | :----- | :---------- | :------- |
 | access_token | string | access token | true |
 | user_id | string | user id | true |
 | device_id | string | device id | true |
