@@ -56,14 +56,14 @@ final db = HiveCollectionsDatabase('sdn_example_chat', dir.path);
 await db. open();
 return db;
 });
-client.sdnnode = Uri.parse('https://XXX.network'); The domain name of the server
+client.sdnnode = Uri.parse('https://XXX.network'); // The domain name of the node
   
 ```
 
 
 
 
-### 5) Run dmo
+### 5) Run demo
 
 ```
 
@@ -142,8 +142,8 @@ PreloginResponse
 3. Sign appServiceSign on the message return value of  step 2
 
 ```dart
- // Make a request to your backend API to sign the message and retrieve the signature.
-  // Note: This example demonstrates the concept; implement this API in your backend.
+// Make a request to your backend API to sign the message and retrieve the signature.
+// Note: This example demonstrates the concept; implement this API in your backend.
   
 final client = Provider.of<Client>(context, listen: false);
 ApperviceSignResponse response =
