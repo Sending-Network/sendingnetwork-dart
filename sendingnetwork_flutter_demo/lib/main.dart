@@ -19,6 +19,7 @@ String addressHexAll = "";
 String homeUrl = "https://portal0101.sending.network";
 String developSignUrl = "";
 
+
 late Room currentRoom;
 
 void main() async {
@@ -271,6 +272,9 @@ class _RoomListPageState extends State<RoomListPage> {
     );
   }
 
+ 
+
+
   @override
   Widget build(BuildContext context) {
     final client = Provider.of<Client>(context, listen: false);
@@ -335,6 +339,58 @@ void _invite(Room room) async {
   print("invite userid=${room.id}");
 }
 
+ void _setRoomRules(BuildContext context,Room room) async {
+  String jsonString = '''  
+     {
+    "join_rule":"token.access",
+    "join_params":{
+        "logic":"ANY",
+        "requirements":[
+            {
+                "requiredToken":{
+                    "name":"USD Coin",
+                    "symbol":"USDC",
+                    "logo":"https://static.alchemyapi.io/images/assets/3408.png",
+                    "address":"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+                },
+                "requiredAmount":10
+            },
+            {
+                "requiredToken":{
+                    "name":"0N1 Force",
+                    "symbol":"0N1",
+                    "logo":"https://lh3.googleusercontent.com/7gOej3SUvqALR-qkqL_ApAt97SpUKQOZQe88p8jPjeiDDcqITesbAdsLcWlsIg8oh7SRrTpUPfPlm12lb4xDahgP2h32pQQYCsuOM_s=s120",
+                    "address":"0x3bf2922f4520a8ba0c2efc3d2a1539678dad5e9d",
+                    "type":"ERC721"
+                },
+                "requiredAmount":1
+            }
+        ]
+    },
+    "join_advance":{
+        "rule_name":"",
+        "rule_interface":""
+    }
+  }
+  ''';  
+    Map<String, dynamic> jsonData = jsonDecode(jsonString);  
+
+    final client = Provider.of<Client>(context, listen: false);
+    print("id=${room.id}");
+    print("jsonString=${jsonString}");
+    print("setRoomStateWithKeyjsonData=${jsonData}");
+    print("setRoomStateWithKeyjclient=${client}");
+
+
+    var response =   await client.setRoomStateWithKey(
+      room.id,
+      "m.room.join_rules",
+      '',
+      jsonData,
+    );
+    print("setRoomStateWithKeyresponse=$response");
+  }
+
 void _showAlertDialog(BuildContext context, Room room) {
   showDialog(
     context: context,
@@ -349,6 +405,13 @@ void _showAlertDialog(BuildContext context, Room room) {
               Navigator.of(context).pop();
             },
             child: const Text('invite'),
+          ),
+          TextButton(
+            onPressed: () {
+              _setRoomRules(context,room);
+              Navigator.of(context).pop();
+            },
+            child: const Text('setRoomRules'),
           ),
         ],
       );

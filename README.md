@@ -393,6 +393,29 @@ Entry parameters:
 | :------ | :----- | :--------------- | :------- |
 | newName | string | Room name string | true |
 
+7. setRoomStateWithKey
+
+```
+ var response =   await client.setRoomStateWithKey(
+      room.id,
+      "m.room.join_rules",
+      '',
+      jsonData,
+    );
+```
+
+Entry parameters:
+
+| Name    | Type   | Description      | Required |
+| :------ | :----- | :--------------- | :------- |
+| roomid | string | Roomid string | true     |
+| eventType | string | The type of event to send | true     |
+| stateKey | string | The state_key for the state to send. | false     |
+| body | map | body | true     |
+
+
+
 
 ## developkey
+
 https://sending-network.gitbook.io/sending.network/sdk-documentation/developer-key
