@@ -413,6 +413,36 @@ Entry parameters:
 | stateKey | string | The state_key for the state to send. | false     |
 | body | map | body | true     |
 
+body
+
+```
+{
+        "logic": "ANY", //The relationship between requirements and internal memory, ANY or, ALL and
+        "Require": [
+            {
+                "required token": {
+                    "name": "USD Coin", // name
+                    "symbol": "USDC", // symbol
+                    "logo": "https://static.alchemyapi.io/images/assets/3408.png",//
+                    "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48" //Contract address
+                },
+                "requiredAmount": 10 // required amount
+            },
+            {
+                "required token": {
+                    "name": "0N1 Power",
+                    "symbol": "0N1",
+                    "logo": "https://lh3.googleusercontent.com/7gOej3SUvqALR-qkqL_ApAt97SpUKQOZQe88p8jPjeiDDcqITesbAdsLcWlsIg8oh7SRrTpUPfPlm12lb4xDahgP2h32pQQYCsuOM_s=s120",
+                    "Address": "0x3bf2922f4520a8ba0c2efc3d2a1539678dad5e9d",
+                    "type": "ERC721" // Type, the type of token
+                },
+                "Amount required": 1
+            }
+        ]
+    }
+}
+```
+
 
 
 
