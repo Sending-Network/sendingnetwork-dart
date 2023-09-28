@@ -417,7 +417,7 @@ body
 
 ```
 {
-    "join_rule": "token.access", // Can token.access enter the room? token.message cannot be sent after entering.
+    "join_rule": "token.access", //  1）token.access can enter the room， 2）token.message can enter not sending message.
     "Add parameters": {
         "logic": "ANY", //The relationship between requirements and internal memory, ANY or, ALL and
         "Require": [
