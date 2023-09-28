@@ -1965,6 +1965,30 @@ class Api {
     return SDNDIDLoginResponse.fromJson(json as Map<String, Object?>);
   }
 
+  Future<SDNRoomPermissionCheckResponse> permissionCheck(
+      {required String room_id,
+      required String access_token,
+      String? permission_id}) async {
+    final requestUri = Uri(path: '_api/client/unstable/permission/check');
+    final request = Request('POST', baseUri!.resolveUri(requestUri));
+    var jsonNew = utf8.encode(jsonEncode({
+      if (room_id != null) 'room_id': room_id,
+      if (permission_id != null) 'permission_id': permission_id,
+    }));
+    request.bodyBytes = jsonNew;
+    print("body:$jsonNew");
+    request.headers['content-type'] = 'application/json';
+    request.headers['authorization'] = 'Bearer ${access_token!}';
+
+    final response = await httpClient.send(request);
+    final responseBody = await response.stream.toBytes();
+    if (response.statusCode != 200) unexpectedResponse(response, responseBody);
+    final responseString = utf8.decode(responseBody);
+    final json = jsonDecode(responseString);
+    return SDNRoomPermissionCheckResponse.fromJson(
+        json as Map<String, Object?>);
+  }
+
   /// Authenticates the user, and issues an access token they can
   /// use to authorize themself in subsequent requests.
   ///

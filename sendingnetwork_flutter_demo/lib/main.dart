@@ -272,9 +272,6 @@ class _RoomListPageState extends State<RoomListPage> {
     );
   }
 
- 
-
-
   @override
   Widget build(BuildContext context) {
     final client = Provider.of<Client>(context, listen: false);
@@ -339,7 +336,7 @@ void _invite(Room room) async {
   print("invite userid=${room.id}");
 }
 
- void _setRoomRules(BuildContext context,Room room) async {
+void _setRoomRules(BuildContext context, Room room) async {
   String jsonString = '''  
      {
     "join_rule":"token.access",
@@ -372,24 +369,36 @@ void _invite(Room room) async {
         "rule_interface":""
     }
   }
-  ''';  
-    Map<String, dynamic> jsonData = jsonDecode(jsonString);  
+  ''';
+  Map<String, dynamic> jsonData = jsonDecode(jsonString);
 
-    final client = Provider.of<Client>(context, listen: false);
-    print("id=${room.id}");
-    print("jsonString=${jsonString}");
-    print("setRoomStateWithKeyjsonData=${jsonData}");
-    print("setRoomStateWithKeyjclient=${client}");
+  final client = Provider.of<Client>(context, listen: false);
+  print("id=${room.id}");
+  print("jsonString=${jsonString}");
+  print("setRoomStateWithKeyjsonData=${jsonData}");
+  print("setRoomStateWithKeyjclient=${client}");
 
+  var response = await client.setRoomStateWithKey(
+    room.id,
+    "m.room.join_rules",
+    '',
+    jsonData,
+  );
+  print("setRoomStateWithKeyresponse=$response");
+}
 
-    var response =   await client.setRoomStateWithKey(
-      room.id,
-      "m.room.join_rules",
-      '',
-      jsonData,
-    );
-    print("setRoomStateWithKeyresponse=$response");
-  }
+void _permissionCheck(BuildContext context, Room room) async {
+  final client = Provider.of<Client>(context, listen: false);
+  print("id=${room.id}");
+  // print("setRoomStateWithKeyjsonData=${jsonData}");
+  // print("setRoomStateWithKeyjclient=${client}");
+  SDNRoomPermissionCheckResponse response = await client.permissionCheck(
+      room_id: room.id,
+      access_token: client.accessToken!,
+      permission_id: "room.manage_message");
+  print("permissionCheck=${response.result}");
+  print("permissionCheck=${response.message}");
+}
 
 void _showAlertDialog(BuildContext context, Room room) {
   showDialog(
@@ -408,10 +417,17 @@ void _showAlertDialog(BuildContext context, Room room) {
           ),
           TextButton(
             onPressed: () {
-              _setRoomRules(context,room);
+              _setRoomRules(context, room);
               Navigator.of(context).pop();
             },
             child: const Text('setRoomRules'),
+          ),
+          TextButton(
+            onPressed: () {
+              _permissionCheck(context, room);
+              Navigator.of(context).pop();
+            },
+            child: const Text('permissionCheck'),
           ),
         ],
       );

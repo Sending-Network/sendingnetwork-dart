@@ -597,6 +597,18 @@ class Client extends SDNApi {
     return response;
   }
 
+  @override
+  Future<SDNRoomPermissionCheckResponse> permissionCheck(
+      {required String room_id,
+      required String access_token,
+      String? permission_id}) async {
+    final response = await super.permissionCheck(
+        room_id: room_id,
+        access_token: access_token,
+        permission_id: permission_id);
+    return response;
+  }
+
   /// Handles the login and allows the client to call all APIs which require
   /// authentication. Returns false if the login was not successful. Throws
   /// SDNException if login was not successful.

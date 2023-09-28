@@ -1414,6 +1414,19 @@ class SDNDIDListResponse {
 }
 
 @_NameSource('generated')
+class SDNRoomPermissionCheckResponse {
+  bool result;
+  String? message;
+  SDNRoomPermissionCheckResponse({required this.result, this.message});
+  SDNRoomPermissionCheckResponse.fromJson(Map<String, dynamic> json)
+      : result = json['result'] as bool,
+        message = json['message' ?? ""] as String;
+  Map<String, dynamic> toJson() {
+    return {'result': result, "message": message};
+  }
+}
+
+@_NameSource('generated')
 class ApperviceSignResponse {
   String signature;
 
