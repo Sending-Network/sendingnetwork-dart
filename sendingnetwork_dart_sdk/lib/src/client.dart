@@ -509,22 +509,12 @@ class Client extends SDNApi {
   }
 
   @override
-  Future<String> postPreLoginDID(
+  Future<SDNLoginResponse> postPreLoginDID(
       {String? did,
       String? address,
       String? random,
       String? device_id,
       ClientPublicKey? client_key}) async {
-    // if (node == null) {
-    //   final domain = identifier is AuthenticationUserIdentifier
-    //       ? identifier.user.domain
-    //       : null;
-    //   if (domain != null) {
-    //     await checkNode(Uri.https(domain, ''));
-    //   } else {
-    //     throw Exception('No node specified!');
-    //   }
-    // }
     final response = await super.postPreLoginDID(
         did: did,
         address: address,
@@ -532,21 +522,6 @@ class Client extends SDNApi {
         device_id: device_id,
         client_key: client_key);
 
-    // Connect if there is an access token in the response.
-    // final accessToken = response.accessToken;
-    // final deviceId_ = response.deviceId;
-    // final userId = response.userId;
-    // final node_ = node;
-    // if (node_ == null) {
-    //   throw Exception('Registered but homerserver is null.');
-    // }
-    // await init(
-    //   newToken: accessToken,
-    //   newUserID: userId,
-    //   newNode: node_,
-    //   newDeviceName: initialDeviceDisplayName ?? '',
-    //   newDeviceID: deviceId_,
-    // );
     return response;
   }
 

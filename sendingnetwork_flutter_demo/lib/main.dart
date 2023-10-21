@@ -14,12 +14,10 @@ import 'package:intl/intl.dart';
 import 'package:eth_sig_util/eth_sig_util.dart';
 import 'package:path_provider/path_provider.dart';
 
-String privKey =
-    "f630d27bafc00df4bfb452586f9e7b4dfda1b3f16e242819311473164a2e28d9"; //
-String addressHexAll = "0xa6dC81DE79ba5BDB908da792d5A96cBB15Cc7424";
-String homeUrl = "https://beginner.sending.network";
-// String homeUrl = "https://portal0101.sending.network";
-// https://portal0101.sending.network
+String privKey = ""; //
+String addressHexAll = "";
+String homeUrl = "";
+
 String developSignUrl = "https://rewards.sending.network/_api/appservice/sign";
 
 late Room currentRoom;
@@ -101,15 +99,13 @@ class _LoginPageState extends State<LoginPage> {
       _loading = true;
     });
     final client = Provider.of<Client>(context, listen: false);
-    String responseStr;
+    SDNLoginResponse response;
     if (response1.data.isNotEmpty) {
-      responseStr = await client.postPreLoginDID(did: response1.data[0]);
+      response = await client.postPreLoginDID(did: response1.data[0]);
     } else {
-      responseStr = await client.postPreLoginDID(address: address);
+      response = await client.postPreLoginDID(address: address);
     }
-    final json = jsonDecode(responseStr);
-    print("json=$responseStr");
-    var response = SDNLoginResponse.fromJson(json as Map<String, Object?>);
+
     print("postPreLoginDID response.did= ${response.did}");
     print("postPreLoginDID response.message= ${response.message}");
     print("postPreLoginDID response.updated= ${response.updated}");

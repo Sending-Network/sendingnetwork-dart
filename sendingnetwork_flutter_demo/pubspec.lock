@@ -582,14 +582,14 @@ packages:
       path: "../sendingnetwork_dart_sdk"
       relative: true
     source: path
-    version: "0.22.0"
+    version: "0.0.9"
   sdn_api_lite:
     dependency: transitive
     description:
       path: "../sendingnetworkdart_api_lite"
       relative: true
     source: path
-    version: "1.7.1"
+    version: "0.0.9"
   sdp_transform:
     dependency: transitive
     description:

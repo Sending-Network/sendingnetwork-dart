@@ -399,7 +399,7 @@ packages:
       path: "../sendingnetworkdart_api_lite"
       relative: true
     source: path
-    version: "1.7.1"
+    version: "0.0.9"
   sdp_transform:
     dependency: "direct main"
     description:

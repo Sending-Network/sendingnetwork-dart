@@ -1888,7 +1888,7 @@ class Api {
     return SDNDIDListResponse.fromJson(json as Map<String, Object?>);
   }
 
-  Future<String> postPreLoginDID(
+  Future<SDNLoginResponse> postPreLoginDID(
       {String? did,
       String? address,
       String? random,
@@ -1909,7 +1909,9 @@ class Api {
     final responseBody = await response.stream.toBytes();
     if (response.statusCode != 200) unexpectedResponse(response, responseBody);
     final responseString = utf8.decode(responseBody);
-    return responseString;
+    final json = jsonDecode(responseString);
+    var responseNew = SDNLoginResponse.fromJson(json as Map<String, Object?>);
+    return responseNew;
   }
 
   Future<ApperviceSignResponse> appServiceSign(
