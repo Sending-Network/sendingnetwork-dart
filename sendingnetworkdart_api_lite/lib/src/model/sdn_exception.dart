@@ -25,7 +25,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-import 'package:sdn_api_lite/sdn_api_lite.dart';
+import 'package:sendingnetworkdart_api_lite/sendingnetworkdart_api_lite.dart';
 
 enum SDNError {
   M_UNKNOWN,

@@ -16,7 +16,7 @@
  *   along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import 'package:sdn_api_lite/sdn_api_lite.dart';
+import 'package:sendingnetworkdart_api_lite/sendingnetworkdart_api_lite.dart';
 import 'package:slugify/slugify.dart';
 
 import 'package:sdn/src/room.dart';

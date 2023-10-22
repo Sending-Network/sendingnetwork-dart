@@ -103,8 +103,8 @@ class FakeSDNApi extends BaseClient {
       action = action.substring(0, action.length - 1);
     }
     if (action.endsWith('?server_name')) {
-      // This can be removed after sdn_api_lite is released with:
-      // https://gitlab.com/famedly/libraries/sdn_api_lite/-/merge_requests/16
+      // This can be removed after sendingnetworkdart_api_lite is released with:
+      // https://gitlab.com/famedly/libraries/sendingnetworkdart_api_lite/-/merge_requests/16
       action = action.substring(0, action.length - 12);
     }
     if (action.endsWith('/')) {

@@ -27,7 +27,7 @@ under the same directory
 
 sendingnetwork_dart_sdk depends on local path
 ```
-sdn_api_lite:
+sendingnetworkdart_api_lite:
 path: ../sendingnetworkdart_api_lite
 ```
 

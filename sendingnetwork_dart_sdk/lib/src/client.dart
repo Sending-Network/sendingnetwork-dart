@@ -2191,7 +2191,7 @@ class Client extends SDNApi {
         event.type == EventTypes.CallSDPStreamMetadataChangedPrefix) {
       onSDPStreamMetadataChangedReceived.add(event);
       // TODO(duan): Only used (org.sdn.msc3401.call) during the current test,
-      // need to add GroupCallPrefix in sdn_api_lite
+      // need to add GroupCallPrefix in sendingnetworkdart_api_lite
     } else if (event.type == EventTypes.GroupCallPrefix) {
       onGroupCallRequest.add(event);
     }

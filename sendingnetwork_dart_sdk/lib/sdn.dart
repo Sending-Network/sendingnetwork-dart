@@ -19,7 +19,7 @@
 /// SDN SDK written in pure Dart.
 library sdn;
 
-export 'package:sdn_api_lite/sdn_api_lite.dart';
+export 'package:sendingnetworkdart_api_lite/sendingnetworkdart_api_lite.dart';
 
 export 'src/client.dart';
 export 'src/database/database_api.dart';

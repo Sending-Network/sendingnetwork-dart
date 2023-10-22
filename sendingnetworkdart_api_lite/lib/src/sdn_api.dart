@@ -27,7 +27,7 @@ import 'dart:typed_data';
 
 import 'package:http/http.dart' as http;
 
-import '../sdn_api_lite.dart';
+import '../sendingnetworkdart_api_lite.dart';
 import 'generated/api.dart';
 
 enum RequestType { GET, POST, PUT, DELETE }

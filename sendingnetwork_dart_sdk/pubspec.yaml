@@ -23,11 +23,11 @@ dependencies:
   image: ^4.0.15
   js: ^0.6.3
   markdown: ^4.0.0
-  # sdn_api_lite: ^1.7.0
+  # sendingnetworkdart_api_lite: ^1.7.0
   mime: ^1.0.0
   olm: ^2.0.2
   random_string: ^2.3.1
-  sdn_api_lite:
+  sendingnetworkdart_api_lite:
      path: ../sendingnetworkdart_api_lite
 
   sdp_transform: ^0.3.2
@@ -46,5 +46,5 @@ dev_dependencies:
   #flutter_test: {sdk: flutter}
 
 #dependency_overrides:
-#  sdn_api_lite:
-#    path: ../sdn_api_lite
+#  sendingnetworkdart_api_lite:
+#    path: ../sendingnetworkdart_api_lite

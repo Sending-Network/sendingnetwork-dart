@@ -21,7 +21,7 @@
 * SOFTWARE.
 */
 
-library sdn_api_lite;
+library sendingnetworkdart_api_lite;
 
 export 'src/generated/model.dart';
 export 'src/sdn_api.dart';

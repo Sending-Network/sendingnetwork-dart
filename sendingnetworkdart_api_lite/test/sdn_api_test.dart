@@ -25,8 +25,8 @@ import 'dart:typed_data';
 
 import 'package:test/test.dart';
 
-import 'package:sdn_api_lite/fake_sdn_api.dart';
-import 'package:sdn_api_lite/sdn_api_lite.dart';
+import 'package:sendingnetworkdart_api_lite/fake_sdn_api.dart';
+import 'package:sendingnetworkdart_api_lite/sendingnetworkdart_api_lite.dart';
 
 const emptyRequest = <String, Object?>{};
 

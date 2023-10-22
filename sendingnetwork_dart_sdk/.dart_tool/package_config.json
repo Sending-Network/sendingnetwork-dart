@@ -296,16 +296,16 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "sdn_api_lite",
-      "rootUri": "../../sendingnetworkdart_api_lite",
-      "packageUri": "lib/",
-      "languageVersion": "3.0"
-    },
-    {
       "name": "sdp_transform",
       "rootUri": "file:///Users/chenghao/.pub-cache/hosted/pub.flutter-io.cn/sdp_transform-0.3.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "sendingnetworkdart_api_lite",
+      "rootUri": "../../sendingnetworkdart_api_lite",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "shelf",
@@ -464,7 +464,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-10-22T07:05:37.225361Z",
+  "generated": "2023-10-22T07:44:57.704949Z",
   "generator": "pub",
   "generatorVersion": "3.2.0-134.1.beta"
 }

@@ -28,7 +28,7 @@ import 'dart:math';
 import 'package:http/http.dart';
 import 'package:http/testing.dart';
 
-import 'package:sdn_api_lite/sdn_api_lite.dart';
+import 'package:sendingnetworkdart_api_lite/sendingnetworkdart_api_lite.dart';
 
 Map<String, Object?> decodeJson(dynamic data) {
   if (data is String) {

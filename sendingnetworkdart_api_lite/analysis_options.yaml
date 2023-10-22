@@ -17,5 +17,5 @@ analyzer:
   errors:
     todo: ignore
   exclude:
-    - example/sdn_api_lite_example.dart
+    - example/sendingnetworkdart_api_lite_example.dart
     - lib/src/generated/**.dart

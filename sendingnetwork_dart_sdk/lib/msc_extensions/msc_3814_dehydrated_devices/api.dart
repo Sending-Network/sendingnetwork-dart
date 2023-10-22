@@ -21,7 +21,7 @@
 * SOFTWARE.
 */
 
-import 'package:sdn_api_lite/sdn_api_lite.dart';
+import 'package:sendingnetworkdart_api_lite/sendingnetworkdart_api_lite.dart';
 
 import 'package:sdn/msc_extensions/msc_3814_dehydrated_devices/model/dehydrated_device.dart';
 import 'package:sdn/msc_extensions/msc_3814_dehydrated_devices/model/dehydrated_device_events.dart';

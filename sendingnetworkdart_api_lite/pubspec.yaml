@@ -1,4 +1,4 @@
-name: sdn_api_lite
+name: sendingnetworkdart_api_lite
 description: Dead simple data model for the sdn.org client-server API.
 version: 0.0.9
 homepage: https://github.com/Sending-Network

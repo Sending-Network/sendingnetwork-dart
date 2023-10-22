@@ -21,7 +21,7 @@
 * SOFTWARE.
 */
 
-import 'package:sdn_api_lite/src/utils/logs.dart';
+import 'package:sendingnetworkdart_api_lite/src/utils/logs.dart';
 import '../../utils/filter_map_extension.dart';
 import '../../utils/try_get_map_extension.dart';
 import '../basic_event.dart';
