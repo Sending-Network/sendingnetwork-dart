@@ -41,9 +41,11 @@ dependencies:
   provider: ^6.0.1
   fluttertoast: ^8.0.8
   web3dart: ^2.7.0
+  sendingnetwork_dart_sdk: ^0.0.9
 
-  sdn:
-    path: ../sendingnetwork_dart_sdk/
+
+  # sdn:
+  #   path: ../sendingnetwork_dart_sdk/
   flutter_web3: ^2.1.9
   get: ^4.6.5
   eth_sig_util: ^0.0.9
