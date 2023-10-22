@@ -14,7 +14,7 @@ import '../model/sync_update.dart';
 import 'fixed_model.dart';
 import 'internal.dart';
 import 'model.dart';
-import 'package:flutter/foundation.dart';
+// import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
 class Api {
@@ -25,7 +25,6 @@ class Api {
       : httpClient = httpClient ?? Client();
   Never unexpectedResponse(BaseResponse response, Uint8List body) {
     final responseString = utf8.decode(body);
-    debugPrint("Exception responseString=$responseString");
     throw Exception('http error response');
   }
 
