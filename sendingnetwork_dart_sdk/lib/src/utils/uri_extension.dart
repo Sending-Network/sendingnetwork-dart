@@ -18,7 +18,7 @@
 
 import 'dart:core';
 
-import 'package:sdn/src/client.dart';
+import 'package:sendingnetwork_dart_sdk/src/client.dart';
 
 extension MxcUriExtension on Uri {
   /// Returns a download Link to this content.

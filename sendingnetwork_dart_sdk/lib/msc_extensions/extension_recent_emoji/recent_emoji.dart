@@ -1,6 +1,6 @@
 library extension_recent_emoji;
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 /// Syncs recent emojis in account data
 ///

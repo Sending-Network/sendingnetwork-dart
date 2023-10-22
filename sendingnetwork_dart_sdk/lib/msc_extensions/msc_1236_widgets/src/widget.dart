@@ -1,4 +1,4 @@
-import 'package:sdn/src/room.dart';
+import 'package:sendingnetwork_dart_sdk/src/room.dart';
 
 class SDNWidget {
   final Room room;

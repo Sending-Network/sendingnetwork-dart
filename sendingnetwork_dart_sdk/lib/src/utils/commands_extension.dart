@@ -18,7 +18,7 @@
 
 import 'dart:async';
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 extension CommandsClientExtension on Client {
   /// Add a command to the command handler. `command` is its name, and `callback` is the

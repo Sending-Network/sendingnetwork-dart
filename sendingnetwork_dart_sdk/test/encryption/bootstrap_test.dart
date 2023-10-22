@@ -22,8 +22,8 @@ import 'dart:convert';
 import 'package:olm/olm.dart' as olm;
 import 'package:test/test.dart';
 
-import 'package:sdn/encryption.dart';
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/encryption.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 import '../fake_client.dart';
 
 void main() {

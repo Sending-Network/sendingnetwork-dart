@@ -9,8 +9,8 @@ import 'dart:typed_data';
 import 'package:js/js.dart';
 import 'package:js/js_util.dart';
 
-import 'package:sdn/sdn.dart' hide Event;
-import 'package:sdn/src/utils/web_worker/native_implementations_web_worker.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart' hide Event;
+import 'package:sendingnetwork_dart_sdk/src/utils/web_worker/native_implementations_web_worker.dart';
 
 ///
 ///

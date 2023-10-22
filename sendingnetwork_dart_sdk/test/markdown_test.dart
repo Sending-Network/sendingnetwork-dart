@@ -18,7 +18,7 @@
 
 import 'package:test/test.dart';
 
-import 'package:sdn/src/utils/markdown.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/markdown.dart';
 
 void main() {
   group('markdown', () {

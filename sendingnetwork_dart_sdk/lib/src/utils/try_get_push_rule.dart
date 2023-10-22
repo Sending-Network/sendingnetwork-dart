@@ -1,4 +1,4 @@
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 extension TryGetPushRule on PushRuleSet {
   static PushRuleSet tryFromJson(Map<String, dynamic> json) {

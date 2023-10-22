@@ -19,7 +19,7 @@
 import 'package:canonical_json/canonical_json.dart';
 import 'package:test/test.dart';
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 void main() {
   /// All Tests related to the ChatTime

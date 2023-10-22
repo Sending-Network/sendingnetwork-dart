@@ -16,7 +16,7 @@
  *   along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 /// Calculates some benchmarks for this function. Give it a [name] and a [func]
 /// to call and it will calculate the needed milliseconds. Give it an optional

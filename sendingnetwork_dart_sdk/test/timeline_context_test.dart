@@ -21,8 +21,8 @@ import 'dart:async';
 import 'package:olm/olm.dart' as olm;
 import 'package:test/test.dart';
 
-import 'package:sdn/sdn.dart';
-import 'package:sdn/src/models/timeline_chunk.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/src/models/timeline_chunk.dart';
 import 'fake_client.dart';
 import 'fake_sdn_api.dart';
 

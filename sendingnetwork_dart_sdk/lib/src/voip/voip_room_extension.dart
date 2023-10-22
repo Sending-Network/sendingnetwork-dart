@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:collection/collection.dart';
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 extension GroupCallUtils on Room {
   /// returns the user count (not sessions, yet) for the group call with id: `groupCallId`.

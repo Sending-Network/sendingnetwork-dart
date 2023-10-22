@@ -19,7 +19,7 @@
 import 'package:canonical_json/canonical_json.dart';
 import 'package:olm/olm.dart' as olm;
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 extension JsonSignatureCheckExtension on Map<String, dynamic> {
   /// Checks the signature of a signed json object.

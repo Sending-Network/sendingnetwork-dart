@@ -1,4 +1,4 @@
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 class TimelineChunk {
   String prevBatch; // pos of the first event of the database timeline chunk

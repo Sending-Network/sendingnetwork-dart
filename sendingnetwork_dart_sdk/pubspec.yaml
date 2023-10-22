@@ -1,9 +1,8 @@
-name: sdn
-description: SDN Dart SDK
+name: sendingnetwork_dart_sdk
+description: sendingnetwork_dart_sdk Dart SDK
 version: 0.0.9
 homepage: https://github.com/Sending-Network
 repository: https://github.com/Sending-Network/sendingnetwork-dart/tree/main/sendingnetwork_dart_sdk
-publish_to: none
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
@@ -23,12 +22,10 @@ dependencies:
   image: ^4.0.15
   js: ^0.6.3
   markdown: ^4.0.0
-  # sendingnetworkdart_api_lite: ^1.7.0
+  sendingnetworkdart_api_lite: 0.0.9
   mime: ^1.0.0
   olm: ^2.0.2
   random_string: ^2.3.1
-  sendingnetworkdart_api_lite:
-     path: ../sendingnetworkdart_api_lite
 
   sdp_transform: ^0.3.2
   slugify: ^2.0.0

@@ -22,7 +22,7 @@ import 'package:hive/hive.dart';
 import 'package:olm/olm.dart' as olm;
 import 'package:test/test.dart';
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 import '../test/fake_database.dart';
 import 'test_config.dart';
 

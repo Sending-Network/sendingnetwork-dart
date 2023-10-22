@@ -18,7 +18,7 @@
 
 import 'package:sendingnetworkdart_api_lite/sendingnetworkdart_api_lite.dart';
 
-import 'package:sdn/src/event.dart';
+import 'package:sendingnetwork_dart_sdk/src/event.dart';
 
 class SpaceChild {
   final String? roomId;

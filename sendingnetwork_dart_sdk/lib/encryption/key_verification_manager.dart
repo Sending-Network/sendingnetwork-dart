@@ -16,9 +16,9 @@
  *   along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import 'package:sdn/encryption/encryption.dart';
-import 'package:sdn/encryption/utils/key_verification.dart';
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/encryption.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/key_verification.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 class KeyVerificationManager {
   final Encryption encryption;

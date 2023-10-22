@@ -18,7 +18,7 @@
 
 import 'package:test/test.dart';
 
-import 'package:sdn/src/utils/map_copy_extension.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/map_copy_extension.dart';
 
 void main() {
   group('Map-copy-extension', () {

@@ -43,7 +43,7 @@ For details, refer to the configuration of sendingnetwork_flutter_demo
 ### 3) import sdk
 
 ```
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 ```
 
 

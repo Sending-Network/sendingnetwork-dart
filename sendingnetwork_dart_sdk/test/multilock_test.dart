@@ -18,7 +18,7 @@
 
 import 'package:test/test.dart';
 
-import 'package:sdn/src/utils/multilock.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/multilock.dart';
 
 void main() {
   group('lock', () {

@@ -21,7 +21,7 @@
 * SOFTWARE.
 */
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 class DehydratedDeviceEvents {
   String? nextBatch;

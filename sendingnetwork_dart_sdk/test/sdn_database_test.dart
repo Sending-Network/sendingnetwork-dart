@@ -19,7 +19,7 @@
 
 import 'package:test/test.dart';
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 import 'fake_database.dart';
 
 void main() {

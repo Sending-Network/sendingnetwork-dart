@@ -20,8 +20,8 @@ import 'dart:convert';
 
 import 'package:test/test.dart';
 
-import 'package:sdn/encryption/utils/base64_unpadded.dart';
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/base64_unpadded.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 void main() {
   group('Utils', () {

@@ -22,7 +22,7 @@ import 'package:http/http.dart' as http;
 import 'package:olm/olm.dart' as olm;
 import 'package:test/test.dart';
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 void main() {
   /// All Tests related to device keys

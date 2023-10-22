@@ -18,7 +18,7 @@
 
 import 'dart:async';
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 Future<T?> runInRoot<T>(FutureOr<T> Function() fn) async {
   return await Zone.root.run(() async {

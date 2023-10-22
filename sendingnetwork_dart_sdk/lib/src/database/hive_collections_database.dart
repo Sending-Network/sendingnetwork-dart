@@ -24,13 +24,13 @@ import 'dart:typed_data';
 import 'package:collection/collection.dart';
 import 'package:hive/hive.dart';
 
-import 'package:sdn/encryption/utils/olm_session.dart';
-import 'package:sdn/encryption/utils/outbound_group_session.dart';
-import 'package:sdn/encryption/utils/ssss_cache.dart';
-import 'package:sdn/encryption/utils/stored_inbound_group_session.dart';
-import 'package:sdn/sdn.dart';
-import 'package:sdn/src/utils/queued_to_device_event.dart';
-import 'package:sdn/src/utils/run_benchmarked.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/olm_session.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/outbound_group_session.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/ssss_cache.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/stored_inbound_group_session.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/queued_to_device_event.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/run_benchmarked.dart';
 
 /// This database does not support file caching!
 class HiveCollectionsDatabase extends DatabaseApi {

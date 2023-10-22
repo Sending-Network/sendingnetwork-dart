@@ -4,7 +4,7 @@ import 'dart:html';
 import 'dart:math';
 import 'dart:typed_data';
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 class NativeImplementationsWebWorker extends NativeImplementations {
   final Worker worker;

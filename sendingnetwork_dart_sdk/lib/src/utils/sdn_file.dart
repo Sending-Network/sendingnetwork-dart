@@ -25,8 +25,8 @@ import 'package:blurhash_dart/blurhash_dart.dart';
 import 'package:image/image.dart';
 import 'package:mime/mime.dart';
 
-import 'package:sdn/sdn.dart';
-import 'package:sdn/src/utils/compute_callback.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/compute_callback.dart';
 
 class SDNFile {
   final Uint8List bytes;

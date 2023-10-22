@@ -22,11 +22,11 @@ import 'dart:typed_data';
 import 'package:collection/collection.dart';
 import 'package:html/parser.dart';
 
-import 'package:sdn/sdn.dart';
-import 'package:sdn/src/utils/event_localizations.dart';
-import 'package:sdn/src/utils/file_send_request_credentials.dart';
-import 'package:sdn/src/utils/html_to_text.dart';
-import 'package:sdn/src/utils/markdown.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/event_localizations.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/file_send_request_credentials.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/html_to_text.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/markdown.dart';
 
 abstract class RelationshipTypes {
   static const String reply = 'm.in_reply_to';

@@ -3,8 +3,8 @@
 
 import 'dart:typed_data';
 
-import 'package:sdn/src/utils/crypto/subtle.dart' as subtle;
-import 'package:sdn/src/utils/crypto/subtle.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/crypto/subtle.dart' as subtle;
+import 'package:sendingnetwork_dart_sdk/src/utils/crypto/subtle.dart';
 
 abstract class Hash {
   Hash._(this.name);

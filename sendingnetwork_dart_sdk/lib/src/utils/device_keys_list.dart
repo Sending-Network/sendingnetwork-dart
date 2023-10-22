@@ -22,8 +22,8 @@ import 'package:canonical_json/canonical_json.dart';
 import 'package:collection/collection.dart' show IterableExtension;
 import 'package:olm/olm.dart' as olm;
 
-import 'package:sdn/encryption.dart';
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/encryption.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 enum UserVerifiedStatus { verified, unknown, unknownDevice }
 

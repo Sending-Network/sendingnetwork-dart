@@ -303,7 +303,7 @@
     },
     {
       "name": "sendingnetworkdart_api_lite",
-      "rootUri": "../../sendingnetworkdart_api_lite",
+      "rootUri": "file:///Users/chenghao/.pub-cache/hosted/pub.flutter-io.cn/sendingnetworkdart_api_lite-0.0.9",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -458,13 +458,13 @@
       "languageVersion": "2.19"
     },
     {
-      "name": "sdn",
+      "name": "sendingnetwork_dart_sdk",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-10-22T07:44:57.704949Z",
+  "generated": "2023-10-22T08:15:42.463125Z",
   "generator": "pub",
   "generatorVersion": "3.2.0-134.1.beta"
 }

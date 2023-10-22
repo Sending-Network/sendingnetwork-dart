@@ -22,13 +22,13 @@ import 'dart:convert';
 import 'package:collection/collection.dart';
 import 'package:olm/olm.dart' as olm;
 
-import 'package:sdn/encryption/encryption.dart';
-import 'package:sdn/encryption/utils/base64_unpadded.dart';
-import 'package:sdn/encryption/utils/outbound_group_session.dart';
-import 'package:sdn/encryption/utils/session_key.dart';
-import 'package:sdn/encryption/utils/stored_inbound_group_session.dart';
-import 'package:sdn/sdn.dart';
-import 'package:sdn/src/utils/run_in_root.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/encryption.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/base64_unpadded.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/outbound_group_session.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/session_key.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/stored_inbound_group_session.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/run_in_root.dart';
 
 const megolmKey = EventTypes.MegolmBackup;
 

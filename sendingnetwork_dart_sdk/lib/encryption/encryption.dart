@@ -21,14 +21,14 @@ import 'dart:convert';
 
 import 'package:olm/olm.dart' as olm;
 
-import 'package:sdn/encryption/cross_signing.dart';
-import 'package:sdn/encryption/key_manager.dart';
-import 'package:sdn/encryption/key_verification_manager.dart';
-import 'package:sdn/encryption/olm_manager.dart';
-import 'package:sdn/encryption/ssss.dart';
-import 'package:sdn/encryption/utils/bootstrap.dart';
-import 'package:sdn/sdn.dart';
-import 'package:sdn/src/utils/run_in_root.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/cross_signing.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/key_manager.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/key_verification_manager.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/olm_manager.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/ssss.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/bootstrap.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/run_in_root.dart';
 
 class Encryption {
   final Client client;

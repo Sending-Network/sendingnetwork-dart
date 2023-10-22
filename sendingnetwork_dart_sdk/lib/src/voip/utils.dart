@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:random_string/random_string.dart';
 import 'package:webrtc_interface/webrtc_interface.dart';
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 Future<void> stopMediaStream(MediaStream? stream) async {
   if (stream != null) {

@@ -4,7 +4,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' hide Client;
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 extension UiaLogin on Client {
   /// Implementation of MSC2835:

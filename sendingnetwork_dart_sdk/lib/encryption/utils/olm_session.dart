@@ -18,7 +18,7 @@
 
 import 'package:olm/olm.dart' as olm;
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 class OlmSession {
   String identityKey;

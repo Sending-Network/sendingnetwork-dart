@@ -19,8 +19,8 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:sdn/encryption/utils/base64_unpadded.dart';
-import 'package:sdn/src/utils/crypto/crypto.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/base64_unpadded.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/crypto/crypto.dart';
 
 class EncryptedFile {
   EncryptedFile({

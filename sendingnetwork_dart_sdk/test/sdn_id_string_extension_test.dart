@@ -18,7 +18,7 @@
 
 import 'package:test/test.dart';
 
-import 'package:sdn/src/utils/sdn_id_string_extension.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/sdn_id_string_extension.dart';
 
 void main() {
   /// All Tests related to the ChatTime

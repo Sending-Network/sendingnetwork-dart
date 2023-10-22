@@ -20,10 +20,10 @@ import 'dart:typed_data';
 
 import 'package:olm/olm.dart' as olm;
 
-import 'package:sdn/encryption/encryption.dart';
-import 'package:sdn/encryption/ssss.dart';
-import 'package:sdn/encryption/utils/base64_unpadded.dart';
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/encryption.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/ssss.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/base64_unpadded.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 class CrossSigning {
   final Encryption encryption;

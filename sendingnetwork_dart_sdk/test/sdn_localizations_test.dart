@@ -18,7 +18,7 @@
 
 import 'package:test/test.dart';
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 void main() {
   /// All Tests related to device keys

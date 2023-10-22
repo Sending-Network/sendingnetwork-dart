@@ -23,8 +23,8 @@ import 'dart:math';
 import 'package:collection/collection.dart';
 import 'package:webrtc_interface/webrtc_interface.dart';
 
-import 'package:sdn/sdn.dart';
-import 'package:sdn/src/utils/cached_stream_controller.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/cached_stream_controller.dart';
 
 /// https://github.com/sdn-org/sdn-doc/pull/2746
 /// version 1

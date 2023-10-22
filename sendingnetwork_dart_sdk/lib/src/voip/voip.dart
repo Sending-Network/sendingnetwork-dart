@@ -4,8 +4,8 @@ import 'dart:core';
 import 'package:sdp_transform/sdp_transform.dart' as sdp_transform;
 import 'package:webrtc_interface/webrtc_interface.dart';
 
-import 'package:sdn/sdn.dart';
-import 'package:sdn/src/utils/cached_stream_controller.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/cached_stream_controller.dart';
 
 /// Delegate WebRTC basic functionality.
 abstract class WebRTCDelegate {

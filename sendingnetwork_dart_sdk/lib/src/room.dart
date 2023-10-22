@@ -23,14 +23,14 @@ import 'dart:typed_data';
 import 'package:collection/collection.dart';
 import 'package:html_unescape/html_unescape.dart';
 
-import 'package:sdn/sdn.dart';
-import 'package:sdn/src/models/timeline_chunk.dart';
-import 'package:sdn/src/utils/cached_stream_controller.dart';
-import 'package:sdn/src/utils/crypto/crypto.dart';
-import 'package:sdn/src/utils/file_send_request_credentials.dart';
-import 'package:sdn/src/utils/markdown.dart';
-import 'package:sdn/src/utils/marked_unread.dart';
-import 'package:sdn/src/utils/space_child.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/src/models/timeline_chunk.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/cached_stream_controller.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/crypto/crypto.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/file_send_request_credentials.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/markdown.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/marked_unread.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/space_child.dart';
 
 enum PushRuleState { notify, mentionsOnly, dontNotify }
 

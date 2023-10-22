@@ -25,13 +25,13 @@ import 'package:base58check/base58.dart';
 import 'package:collection/collection.dart';
 import 'package:crypto/crypto.dart';
 
-import 'package:sdn/encryption/encryption.dart';
-import 'package:sdn/encryption/utils/base64_unpadded.dart';
-import 'package:sdn/encryption/utils/ssss_cache.dart';
-import 'package:sdn/sdn.dart';
-import 'package:sdn/src/utils/cached_stream_controller.dart';
-import 'package:sdn/src/utils/crypto/crypto.dart' as uc;
-import 'package:sdn/src/utils/run_in_root.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/encryption.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/base64_unpadded.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/ssss_cache.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/cached_stream_controller.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/crypto/crypto.dart' as uc;
+import 'package:sendingnetwork_dart_sdk/src/utils/run_in_root.dart';
 
 const cacheTypes = <String>{
   EventTypes.CrossSigningSelfSigning,

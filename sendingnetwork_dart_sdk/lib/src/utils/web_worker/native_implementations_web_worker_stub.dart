@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 class NativeImplementationsWebWorker extends NativeImplementations {
   /// the default handler for stackTraces in web workers

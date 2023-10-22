@@ -22,7 +22,7 @@ import 'dart:math';
 import 'package:file/memory.dart';
 import 'package:hive/hive.dart';
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 Future<DatabaseApi> getDatabase(Client? _) => getHiveCollectionsDatabase(_);
 

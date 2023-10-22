@@ -23,12 +23,12 @@ import 'package:canonical_json/canonical_json.dart';
 import 'package:collection/collection.dart';
 import 'package:olm/olm.dart' as olm;
 
-import 'package:sdn/encryption/encryption.dart';
-import 'package:sdn/encryption/utils/json_signature_check_extension.dart';
-import 'package:sdn/encryption/utils/olm_session.dart';
-import 'package:sdn/sdn.dart';
-import 'package:sdn/msc_extensions/msc_3814_dehydrated_devices/api.dart';
-import 'package:sdn/src/utils/run_in_root.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/encryption.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/json_signature_check_extension.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/olm_session.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/msc_extensions/msc_3814_dehydrated_devices/api.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/run_in_root.dart';
 
 class OlmManager {
   final Encryption encryption;

@@ -30,16 +30,16 @@ import 'package:mime/mime.dart';
 import 'package:olm/olm.dart' as olm;
 import 'package:random_string/random_string.dart';
 
-import 'package:sdn/encryption.dart';
-import 'package:sdn/sdn.dart';
-import 'package:sdn/src/models/timeline_chunk.dart';
-import 'package:sdn/src/utils/cached_stream_controller.dart';
-import 'package:sdn/src/utils/compute_callback.dart';
-import 'package:sdn/src/utils/multilock.dart';
-import 'package:sdn/src/utils/run_benchmarked.dart';
-import 'package:sdn/src/utils/run_in_root.dart';
-import 'package:sdn/src/utils/sync_update_item_count.dart';
-import 'package:sdn/src/utils/try_get_push_rule.dart';
+import 'package:sendingnetwork_dart_sdk/encryption.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/src/models/timeline_chunk.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/cached_stream_controller.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/compute_callback.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/multilock.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/run_benchmarked.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/run_in_root.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/sync_update_item_count.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/try_get_push_rule.dart';
 
 typedef RoomSorter = int Function(Room a, Room b);
 

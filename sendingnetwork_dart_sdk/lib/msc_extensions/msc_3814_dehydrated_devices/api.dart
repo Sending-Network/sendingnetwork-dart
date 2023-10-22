@@ -23,8 +23,8 @@
 
 import 'package:sendingnetworkdart_api_lite/sendingnetworkdart_api_lite.dart';
 
-import 'package:sdn/msc_extensions/msc_3814_dehydrated_devices/model/dehydrated_device.dart';
-import 'package:sdn/msc_extensions/msc_3814_dehydrated_devices/model/dehydrated_device_events.dart';
+import 'package:sendingnetwork_dart_sdk/msc_extensions/msc_3814_dehydrated_devices/model/dehydrated_device.dart';
+import 'package:sendingnetwork_dart_sdk/msc_extensions/msc_3814_dehydrated_devices/model/dehydrated_device_events.dart';
 
 /// Endpoints related to MSC3814, dehydrated devices v2 aka shrivelled sessions
 /// https://github.com/sdn-org/sdn-spec-proposals/pull/3814

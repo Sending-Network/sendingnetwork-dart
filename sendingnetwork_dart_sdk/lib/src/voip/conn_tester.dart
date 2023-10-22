@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:webrtc_interface/webrtc_interface.dart';
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 class ConnectionTester {
   Client client;

@@ -1,6 +1,6 @@
 library msc_1236_widgets;
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 export 'src/widget.dart';
 

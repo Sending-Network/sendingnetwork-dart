@@ -19,7 +19,7 @@
 import 'package:sendingnetworkdart_api_lite/sendingnetworkdart_api_lite.dart';
 import 'package:slugify/slugify.dart';
 
-import 'package:sdn/src/room.dart';
+import 'package:sendingnetwork_dart_sdk/src/room.dart';
 
 extension ImagePackRoomExtension on Room {
   /// Get all the active image packs for the specified [usage], mapped by their slug

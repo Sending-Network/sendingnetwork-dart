@@ -23,7 +23,7 @@
 
 import 'package:test/test.dart';
 
-import 'package:sdn/msc_extensions/msc_3814_dehydrated_devices/api.dart';
+import 'package:sendingnetwork_dart_sdk/msc_extensions/msc_3814_dehydrated_devices/api.dart';
 import '../fake_client.dart';
 import '../fake_sdn_api.dart';
 

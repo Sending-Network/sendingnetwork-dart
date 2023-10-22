@@ -18,7 +18,7 @@
 
 import 'package:test/test.dart';
 
-import 'package:sdn/src/utils/html_to_text.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/html_to_text.dart';
 
 void main() {
   group('htmlToText', () {

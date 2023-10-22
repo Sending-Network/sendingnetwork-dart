@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'dart:typed_data';
 
-import 'package:sdn/encryption.dart';
-import 'package:sdn/sdn.dart';
-import 'package:sdn/src/utils/compute_callback.dart';
+import 'package:sendingnetwork_dart_sdk/encryption.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/compute_callback.dart';
 
 /// provides native implementations for demanding arithmetic operations
 /// in order to prevent the UI from blocking

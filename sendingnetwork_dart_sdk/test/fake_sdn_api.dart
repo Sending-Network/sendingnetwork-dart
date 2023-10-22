@@ -23,8 +23,8 @@ import 'dart:math';
 
 import 'package:http/http.dart';
 
-import 'package:sdn/sdn.dart' as sdk;
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart' as sdk;
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 T? tryCast<T>(dynamic object) => object is T ? object : null;
 

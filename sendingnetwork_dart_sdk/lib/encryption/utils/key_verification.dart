@@ -24,10 +24,10 @@ import 'package:canonical_json/canonical_json.dart';
 import 'package:olm/olm.dart' as olm;
 import 'package:typed_data/typed_data.dart';
 
-import 'package:sdn/encryption/encryption.dart';
-import 'package:sdn/encryption/utils/base64_unpadded.dart';
-import 'package:sdn/sdn.dart';
-import 'package:sdn/src/utils/crypto/crypto.dart' as uc;
+import 'package:sendingnetwork_dart_sdk/encryption/encryption.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/base64_unpadded.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/src/utils/crypto/crypto.dart' as uc;
 
 /*
     +-------------+                    +-----------+

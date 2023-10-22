@@ -18,7 +18,7 @@
 
 // Helper for fast evaluation of push conditions on a bunch of events
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 class EvaluatedPushRuleAction {
   // if this message should be highlighted.

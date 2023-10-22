@@ -16,7 +16,7 @@
  *   along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 // Receipts are pretty complicated nowadays. We basicaly have 3 different aspects, that we need to multiplex together:
 // 1. A receipt can be public or private. Currently clients can send either a public one, a private one or both. This means you have 2 receipts for your own user and no way to know, which one is ahead!

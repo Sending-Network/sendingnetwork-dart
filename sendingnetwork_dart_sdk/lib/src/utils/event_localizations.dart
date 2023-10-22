@@ -18,8 +18,8 @@
 
 import 'package:collection/collection.dart';
 
-import 'package:sdn/encryption.dart';
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/encryption.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 abstract class EventLocalizations {
   // As we need to create the localized body off of a different set of parameters, we

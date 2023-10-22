@@ -21,8 +21,8 @@ import 'dart:convert';
 
 import 'package:collection/collection.dart';
 
-import 'package:sdn/sdn.dart';
-import 'package:sdn/src/models/timeline_chunk.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/src/models/timeline_chunk.dart';
 
 /// Represents the timeline of a room. The callback [onUpdate] will be triggered
 /// automatically. The initial

@@ -602,9 +602,10 @@ packages:
   sendingnetworkdart_api_lite:
     dependency: transitive
     description:
-      path: "../sendingnetworkdart_api_lite"
-      relative: true
-    source: path
+      name: sendingnetworkdart_api_lite
+      sha256: "2723b76236e35371db4dd48d9904a11fa6f2f224a277421a93a2d762f7ea92c3"
+      url: "https://pub.flutter-io.cn"
+    source: hosted
     version: "0.0.9"
   sky_engine:
     dependency: transitive

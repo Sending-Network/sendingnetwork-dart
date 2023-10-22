@@ -18,8 +18,8 @@
 
 import 'package:olm/olm.dart' as olm;
 
-import 'package:sdn/encryption/utils/stored_inbound_group_session.dart';
-import 'package:sdn/sdn.dart';
+import 'package:sendingnetwork_dart_sdk/encryption/utils/stored_inbound_group_session.dart';
+import 'package:sendingnetwork_dart_sdk/sdn.dart';
 
 class SessionKey {
   /// The raw json content of the key
