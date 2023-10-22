@@ -29,6 +29,10 @@ coverage_badge.svg
 # Flutter/Dart/Pub related
 **/doc/api/
 
+.dart_tool/
+build/
+pubspec.lock  # Except for application packages
+
 .dart_tool/package_config.json
 pubspec.lock
 .flutter-plugins
