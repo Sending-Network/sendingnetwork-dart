@@ -18,27 +18,10 @@ String developSignUrl = "";
 
 
 ```
-sendingnetwork_flutter_demo
-sendingnetwork_dart_sdk
-sendingnetworkdart_api_lite
+  sendingnetwork_dart_sdk: ^0.0.9
+
 ```
 
-under the same directory
-
-sendingnetwork_dart_sdk depends on local path
-```
-sendingnetworkdart_api_lite:
-path: ../sendingnetworkdart_api_lite
-```
-
-
-sendingnetwork_flutter_demo depends on local path
-```
-sdn:
-path: ../sendingnetwork_dart_sdk/
-```
-
-For details, refer to the configuration of sendingnetwork_flutter_demo
 
 ### 3) import sdk
 
