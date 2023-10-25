@@ -14,13 +14,12 @@ import 'package:intl/intl.dart';
 import 'package:eth_sig_util/eth_sig_util.dart';
 import 'package:path_provider/path_provider.dart';
 
-String privKey =
-    "f630d27bafc00df4bfb452586f9e7b4dfda1b3f16e242819311473164a2e28d9"; //
-String addressHexAll = "0xa6dC81DE79ba5BDB908da792d5A96cBB15Cc7424";
-String homeUrl = "https://beginner.sending.network";
-// String homeUrl = "https://portal0101.sending.network";
+String privKey = ""; //
+String addressHexAll = "";
+String homeUrl = "https://portal0101.sending.network";
 // https://portal0101.sending.network
 
+// only demo use,  should use yourself  developSignUrl
 String developSignUrl = "https://rewards.sending.network/_api/appservice/sign";
 
 late Room currentRoom;

@@ -15,7 +15,7 @@ String developSignUrl = "";
 
 ### 2) Configuration dependencies
 
-
+Add dependencies in pubspec.yaml file
 
 ```
   sendingnetwork_dart_sdk: ^0.0.9

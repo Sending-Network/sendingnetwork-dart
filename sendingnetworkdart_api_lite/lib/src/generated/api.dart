@@ -2065,7 +2065,7 @@ class Api {
   /// authorization. The device associated with the access token is also deleted.
   /// [Device keys](https://spec.sdn.org/unstable/client-server-api/#device-keys) for the device are deleted alongside the device.
   Future<void> logout() async {
-    final requestUri = Uri(path: '_api/client/r/logout');
+    final requestUri = Uri(path: '_api/client/r0/logout');
     final request = Request('POST', baseUri!.resolveUri(requestUri));
     request.headers['authorization'] = 'Bearer ${bearerToken!}';
     final response = await httpClient.send(request);
