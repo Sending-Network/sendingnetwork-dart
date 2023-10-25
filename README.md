@@ -23,7 +23,7 @@ Add dependencies in pubspec.yaml file
 ```
 
 
-### 3) import sdk
+### 3) Import sdk
 
 ```
 import 'package:sendingnetwork_dart_sdk/sdn.dart';
