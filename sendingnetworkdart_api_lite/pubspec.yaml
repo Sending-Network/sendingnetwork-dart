@@ -2,7 +2,7 @@ name: sendingnetworkdart_api_lite
 description: Dead simple data model for the sdn.org client-server API.
 version: 0.1.0
 homepage: https://github.com/Sending-Network
-repository: https://github.com/Sending-Network/sendingnetwork-dart/tree/main/sendingnetworkdart_api_lite
+repository: https://github.com/Sending-Network/sendingnetworkdart_api_lite
 issues: https://github.com/Sending-Network/sendingnetwork-dart/tree/main/sendingnetworkdart_api_lite
 
 environment:
